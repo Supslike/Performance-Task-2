@@ -1,3 +1,4 @@
+/* Resetting default margin, padding, and scroll behavior for all elements */
 * {
     margin: 0;
     padding: 0;
@@ -5,10 +6,12 @@
     scroll-behavior: smooth;
 }
 
+/* Styling the header with a height of 100 viewport heights */
 header {
     height: 100vh;
 }
 
+/* Styling for the navigation bar */
 nav {
     display: flex;
     justify-content: space-around;
@@ -18,6 +21,7 @@ nav {
     background-color: black;
 }
 
+/* Styling for list items in the navigation bar */
 li {
     list-style: none;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -30,15 +34,18 @@ li {
     border-radius: 5px;
 }
 
+/* Styling for list items on hover */
 li:hover {
     background-color: white;
     font-weight: bold;
 }
 
-li:hover a:link, li:hover a:visited{
+/* Styling for links inside list items on hover */
+li:hover a:link, li:hover a:visited {
     color: black;
 }
 
+/* Styling for the unordered list in the navigation bar */
 ul {
     display: flex;
     justify-content: space-evenly;
@@ -46,25 +53,37 @@ ul {
     min-width: 35%;
 }
 
+/* Adjusts the clickable area of the navigations */
+li a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Styling for general links */
 a:link, a:visited {
     color: white;
     text-decoration: none;
 }
 
+/* Styling for articles */
 article {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 110%;
 }
 
+/* Styling for sections with padding */
 section {
     padding-top: 10vh;
     padding-bottom: 5vh;
 }
 
+/* Styling for the footer with a height of 50 viewport heights */
 footer {
     height: 50vh;
 }
 
+/* Styling for the citations section in the footer */
 footer .citations h3 {
     font-weight: normal;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -77,16 +96,19 @@ footer .citations {
     margin-left: 1in;
 }
 
+/* Styling for individual citations in the footer */
 footer .citations cite {
     margin-bottom: 0.5in;
     text-indent: 0.5in;
 }
 
+/* Styling for links in the citations section */
 footer .citations a {
     color: black;
     font-weight: bold;
 }
 
+/* Styling for content titles in the footer */
 footer .content-title h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 0% 2%;
@@ -94,6 +116,7 @@ footer .content-title h2 {
     border-left: #EE1E46 10px solid;
 }
 
+/* Styling for the search input area */
 .search-area {
     border: none;
     width: 3in;
@@ -102,15 +125,17 @@ footer .content-title h2 {
     font-size: larger;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
-    transition: all 0.2s    ;
+    transition: all 0.2s;
 }
 
+/* Styling for the search input area on focus */
 .search-area:focus {
     border: none;
     outline: none;
     border-bottom: 3px solid rgba(255, 255, 255, 0.3);
 }
 
+/* Styling for the fake search container */
 .fake-search {
     max-width: 40%;
     min-width: 40%;
@@ -119,6 +144,7 @@ footer .content-title h2 {
     justify-content: center;
 }
 
+/* Styling for the search wrapper */
 .search-wrapper {
     width: 3in;
     padding: 0.2% 1%;
@@ -129,6 +155,7 @@ footer .content-title h2 {
     border-radius: 10px;
 }
 
+/* Styling for the search icon in the fake search container */
 .fake-search img {
     width: auto;
     height: 28px;
@@ -137,6 +164,7 @@ footer .content-title h2 {
     cursor: pointer;
 }
 
+/* Styling for the title section */
 .title-section {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: larger;
@@ -147,12 +175,14 @@ footer .content-title h2 {
     color: white;
 }
 
+/* Styling for the landing page */
 .landing-page {
     height: 90vh;
     display: flex;
     align-items: center;
 }
 
+/* Styling for the news container */
 .news-container {
     margin-left: 10%;
     display: grid;
@@ -162,10 +192,12 @@ footer .content-title h2 {
     width: 80%;
 }
 
+/* Styling for tall news items */
 .tall-news {
     grid-row: span 2;
 }
 
+/* Styling for the news text wrap */
 .news-container .news .text-wrap {
     width: 100%;
     height: 100%;
@@ -176,6 +208,7 @@ footer .content-title h2 {
     transition: all 0.3s;
 }
 
+/* Styling for news titles in the text wrap */
 .news-container .news .text-wrap h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-transform: capitalize;
@@ -185,18 +218,22 @@ footer .content-title h2 {
     color: white;
 }
 
+/* Styling for individual news items */
 .news-container .news {
     transition: all 0.3s;
 }
 
+/* Styling for news items on hover */
 .news-container .news:hover {
     border-bottom: #EE1E46 10px solid;
 }
 
+/* Styling for text wrap on hover */
 .news-container .news:hover .text-wrap {
     backdrop-filter: blur(3px);
 }
 
+/* Styling for specific news items with background images */
 #news-1 {
     background-image: url("static/1.jpg");
     background-repeat: no-repeat;
@@ -215,12 +252,13 @@ footer .content-title h2 {
     background-size: cover;
 }
 
+/* Styling for general articles */
 .article {
     margin-left: 10%;
     width: 80%;
-
 }
 
+/* Styling for article titles */
 .article-title h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 300%;
@@ -230,6 +268,7 @@ footer .content-title h2 {
     padding-left: 2%;
 }
 
+/* Styling for image wrappers */
 .img-wrapper {
     display: flex;
     justify-content: center;
@@ -238,15 +277,18 @@ footer .content-title h2 {
     margin-bottom: 0.2in;
 }
 
+/* Styling for images within image wrappers */
 .img-wrapper img {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
     border: 3px solid black;
 }
 
+/* Styling for bold text */
 .bold-text {
     font-weight: bold;
 }
 
+/* Styling for citations */
 .citations {
     font-size: larger;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
